@@ -1,0 +1,59 @@
+.tt--home {
+
+  .tt--section-one {
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+
+    .tt--button {
+      left: 50%;
+      margin-left: -75px;
+      position: absolute;
+      top: 65%;
+
+      @media (min-width: 600px) {
+        margin-left: -100px;
+      }
+
+      @media (min-width: 960px) {
+        margin-left: -150px;
+      }
+    }
+  }
+
+  .tt--section-two {
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    position: relative;
+
+    .tt--inner {
+      width: 275px;
+      position: absolute;
+      top: 42%;
+
+      @media (min-width: 600px) {
+        width: 290px;
+      }
+
+      p {
+        line-height: 1.3rem;
+
+        @media (min-width: 600px) {
+          line-height: 1.4rem;
+        }
+      }
+
+      .tt--button {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

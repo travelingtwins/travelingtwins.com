@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Traveling Twins | Bath Re-imagined</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="./assets/css/dflip.css" rel="stylesheet">
+    <link href="./assets/css/themify-icons.css" rel="stylesheet">
+    <style>
+      html {
+        height: 100%;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-vertical;
+        font-family: 'Helvetica', sans-serif;
+      }
+
+      html,
+      html a {
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+      }
+
+      body {
+        background: #666;
+        height: 95%;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="catalog"></div>
+    <script src="./assets/js/libs/jquery.min.js"></script>
+    <script src="./assets/js/dflip.min.js"></script>
+    <script>
+      var flipBook;
+      var dFlipLocation = "./assets";
+
+      $(document).ready(function () {
+        var images = [
+          "./assets/images/catalog/TT-2018-Catalog-01.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-02.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-03.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-04.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-05.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-06.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-07.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-08.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-09.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-10.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-11.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-12.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-13.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-14.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-15.jpg",
+          "./assets/images/catalog/TT-2018-Catalog-16.jpg"
+        ];
+
+        var options = {
+          soundEnable: false,
+          transparent: true,
+          webgl: false,
+          height: "100%",
+          backgroundColor: "rgb(102, 102, 102)",
+          hideControls: "outline,sound,share,thumbnail,pageMode,startPage,endPage,more"
+        }
+
+        flipBook = $(".catalog").flipBook(images, options);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "travelingtwins",
+  "version": "1.0.0",
+  "author": "James C. Palmer",
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^8.0.0",
+    "npm-run-all": "^4.1.2",
+    "uglify-js": "^3.3.8"
+  },
+  "scripts": {
+    "build-css": "node-sass --output-style compressed assets/build/sass/theme.scss assets/dist/css/theme.dist.css",
+    "build-js": "uglifyjs assets/build/js/theme.js --compress --mangle --output assets/dist/js/theme.dist.js",
+    "move-img": "copyfiles -f assets/build/img/* assets/dist/img",
+    "build": "npm-run-all move-img build-css build-js"
+  }
+}

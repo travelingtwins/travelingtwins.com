@@ -1,0 +1,51 @@
+header {
+  align-items: center;
+  background-color: #434445;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    height: 85px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .tt--logo {
+    margin-bottom: 1.5rem;
+    max-width: 200px;
+    width: 100%;
+
+    @media (min-width: 600px) {
+      margin-bottom: 0;
+    }
+  }
+
+  nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 600px) {
+      display: inline-block;
+    }
+  }
+
+  a,
+  a:link {
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+
+    @media (min-width: 600px) {
+      margin-left: 1rem;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// imports
+@import "../../../node_modules/normalize.css/normalize";
+
+// scaffold
+@import "scaffold/general";
+@import "scaffold/footer";
+@import "scaffold/header";
+
+// elements
+@import "elements/button";
+
+// pages
+@import "pages/about";
+@import "pages/home";
