@@ -1,5 +1,6 @@
 // imports
 @import "../../../node_modules/normalize.css/normalize";
+@import "../../../node_modules/fullpage.js/dist/fullpage.min.css";
 
 // scaffold
 @import "scaffold/general";
@@ -8,7 +9,8 @@
 
 // elements
 @import "elements/button";
+@import "elements/fullpage";
+@import "elements/nav";
 
 // pages
-@import "pages/about";
 @import "pages/home";

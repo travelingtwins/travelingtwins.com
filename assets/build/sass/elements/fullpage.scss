@@ -1,0 +1,36 @@
+// Avoid showing slider arrows on page load
+.fp-section {
+  .fp-controlArrow {
+    opacity: 0;
+  }
+}
+
+.fp-completely {
+  .fp-controlArrow {
+    opacity: 0;
+    transition: opacity .4s;
+
+    &.fp-prev {
+      border-right-color: rgba(0,0,0,0.65);
+    }
+
+    &.fp-next {
+      border-left-color: rgba(0,0,0,0.65);
+    }
+  }
+
+  &:hover {
+    .fp-controlArrow {
+      opacity: 1;
+    }
+  }
+}
+
+
+#fp-nav {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}

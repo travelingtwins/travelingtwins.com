@@ -3,49 +3,134 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Traveling Twins | Wholesale & Distribution</title>
+    <title>Traveling Twins</title>
     <link rel="icon" type="image/x-icon" href="./assets/dist/img/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href="./assets/dist/css/theme.dist.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans|Lobster">
+    <link rel="stylesheet" href="./assets/dist/css/theme.dist.legacy.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
 
   <body class="tt--home">
-    <header>
-      <a href="/">
-        <img class="tt--logo" src="./assets/dist/img/logo.png" alt="Traveling Twins">
-      </a>
+    <main class="tt--sections">
+      <header class="tt--section fp-auto-height">
+        <a class="tt--logo" href="">Traveling Twins</a>
+        <a class="tt--link" href="">Catalog</a>
+        <a class="tt--link" href="">Curtains</a>
+        <a class="tt--link" href="">Liners</a>
+      </header>
 
-      <nav class="tt--nav">
-        <a href="/about/">
-          About
-        </a>
+      <section class="tt--section">
+        <div class="tt--inner">
+          <div class="tt--image" data-animation="fadeInLeft">
+            <img src="//placehold.it/1000x1000">
+          </div>
+          <div class="tt--text" data-animation="fadeInRight">
+            <h3>Beautiful Places</h3>
+            <h2>Picture perfect shower curtains every time</h2>
+            <p>Bring the world closer to home with Beautiful Places shower curtains.</p>
+          </div>
+        </div>
+      </section>
 
-        <a href="https://wholesale.traveling-twins.com/">
-          Retail Login
-        </a>
-      </nav>
-    </header>
+      <section class="tt--section">
+        <div class="tt--inner tt--slide">
+          <div class="tt--text" data-animation="fadeInLeft">
+            <h2>They're hassle free</h2>
+            <p>Beautiful Places shower curtains feature twelve <strong>hook-free curtain rings</strong> that fit any standard shower rod. Each ring also has a <strong>built-in liner hook</strong>. No extra parts or assembly required.</p>
+          </div>
+          <div class="tt--image" data-animation="fadeInRight">
+            <img src="//placehold.it/1000x1000">
+          </div>
+        </div>
 
-    <section class="tt--section-one">
-      <img src="./assets/dist/img/home--section-one.jpg">
-      <a class="tt--button" href="https://wholesale.traveling-twins.com/">
-        Retail login
-      </a>
-    </section>
+        <div class="tt--inner tt--slide">
+          <div class="tt--text">
+            <h2>They're luxurious</h2>
+            <p>Beautiful Places shower curtains are made of 100% <strong>high quality</strong> waffled polyester fabric.</p>
+          </div>
+          <div class="tt--image">
+            <img src="//placehold.it/1000x1000">
+          </div>
+        </div>
 
-    <section class="tt--section-two" style="background-image: url(./assets/dist/img/home--section-two.jpg);">
-      <div class="tt--inner">
-        <p>We are excited to introduce you to Traveling Twins, the creation of twin brothers, James and Scott. We’ve drawn upon years of experience along with our passion for adventure and travel to create fun, unique and innovative products. Our debut catalog, Bath Re-imagined, focuses on redefining the way you think about the bathroom.</p>
-        <a class="tt--button" href="/about/">
-          Learn more
-        </a>
-    </section>
+        <div class="tt--inner tt--slide">
+          <div class="tt--text" data-animation="fadeInLeft">
+            <h2>They're innovative</h2>
+            <p>Beautiful Places shower curtains are <strong>machine washable</strong> with <strong>anti-mold</strong> and <strong>anti-mildew</strong> protection.</p>
+          </div>
+          <div class="tt--image" data-animation="fadeInRight">
+            <img src="//placehold.it/1000x1000">
+          </div>
+        </div>
+      </section>
 
-    <footer>
-      <div class="tt--inner">
+      <section class="tt--section">
+        <div class="tt--inner">
+          <div class="tt--image" data-animation="fadeInLeft">
+            <img src="//placehold.it/1000x1000">
+          </div>
+          <div class="tt--text" data-animation="fadeInRight">
+            <h2>Choose your next shower destination</h2>
+            <p>Beautiful Places shower curtains feature <strong>top travel destinations</strong> from around the world.</p>
+            <a class="tt--button" href="">Shop shower curtains</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="tt--section">
+        <div class="tt--inner">
+          <div class="tt--text" data-animation="fadeInLeft">
+            <h3>Designer liners</h3>
+            <h2>Express yourself</h2>
+            <p>Bring fun back into the tub with Designer Liners. Mix and match with a Beautiful Places shower curtain.</p>
+            <a class="tt--button" href="">Shop shower liners</a>
+          </div>
+          <div class="tt--image" data-animation="fadeInRight">
+            <img src="//placehold.it/1000x1000">
+          </div>
+        </div>
+      </section>
+
+      <footer class="tt--section fp-auto-height">
         <p>&copy; Traveling Twins 2018. All rights reserved.</p>
-        <p>Contact us at <a href="hello@traveling-twins.com">hello@traveling-twins.com</a></p>
-      </div>
-    </footer>
+      </footer>
+    </main>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
+    <script type="text/javascript">
+      var triggerAnimations = function(section) {
+        var animations = section.find("[data-animation]");
+        $.each(animations, function () {
+          var $this = $(this);
+          $this.addClass("animated " + $this.data("animation"));
+        });
+      };
+
+      new fullpage('.tt--sections', {
+        licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+        sectionSelector: ".tt--section",
+        slideSelector: ".tt--slide",
+        verticalCentered: false,
+        anchors: ["one", "two", "three", "four", "five", "six"],
+        navigation: true,
+        navigationPosition: "right",
+
+        // Handle page load
+        afterLoad: function(origin, destination, direction) {
+          if (destination.anchor == "one") {
+            var section = $(".tt--section[data-anchor=two");
+            triggerAnimations(section);
+          }
+        },
+
+        // Handle section transition
+        onLeave: function(origin, destination, direction) {
+          var section = $(".tt--section[data-anchor=" + destination.anchor + "]");
+          triggerAnimations(section);
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,19 +1,18 @@
 .tt--button {
-  display: inline-block;
   background-color: rgba(0, 0, 0, 0.125);
   color: #535455;
+  display: inline-block;
   font-size: 0.85rem;
   font-weight: 400;
   height: 45px;
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  width: 150px;
 
   @media (min-width: 600px) {
     font-size: 1.25rem;
     height: 55px;
-    line-height: 55px;
+    line-height: 60px;
     width: 200px;
   }
 

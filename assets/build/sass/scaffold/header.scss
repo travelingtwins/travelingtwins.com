@@ -1,51 +1,42 @@
 header {
-  align-items: center;
-  background-color: #434445;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-
-  @media (min-width: 600px) {
-    flex-direction: row;
-    height: 85px;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+  background-color: #333435 !important;
+  height: 65px;
+  text-align: center;
 
   .tt--logo {
-    margin-bottom: 1.5rem;
-    max-width: 200px;
-    width: 100%;
+    background-image: url(../img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    font-size: 0;
+    line-height: 65px;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-indent: -999em;
+    width: 150px;
 
-    @media (min-width: 600px) {
-      margin-bottom: 0;
+    @media (min-width: 768px) {
+      left: 1.5rem;
+      position: absolute;
     }
   }
 
-  nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: 600px) {
-      display: inline-block;
-    }
-  }
-
-  a,
-  a:link {
+  .tt--link,
+  .tt--link:hover {
+    display: none;
     color: #fff;
-    font-weight: 600;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    font-weight: 100;
+    line-height: 65px;
     text-transform: uppercase;
 
-    @media (min-width: 600px) {
-      margin-left: 1rem;
-      padding-bottom: 0;
-      padding-top: 0;
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin-left: 1.5rem;
+    }
+
+    &:first-child {
+      margin-left: 0;
     }
   }
 }
